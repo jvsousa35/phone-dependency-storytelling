@@ -157,3 +157,6 @@ For class submission, include:
 4. Explain the Sage archetype.
 5. Walk through the AI orchestration process.
 6. Summarize the curator-style review and improvements.
+
+[Why Phones Are Addictive](./why-phones-are-addictive.md)
+[How to Take Back Control](./take-back-control.md)
