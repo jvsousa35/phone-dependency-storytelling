@@ -1,45 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Attention Trap</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      color: #d0d0d0;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .scroll-note {
+      font-size: 0.95rem;
+      color: #9e9e9e;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .section:nth-child(even) {
+      background: #161616;
+    }
+
+    .section:nth-child(odd) {
+      background: #1d1d1d;
+    }
+
+    .content {
+      max-width: 850px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .eyebrow {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #9e9e9e;
+      margin-bottom: 12px;
+    }
+
+    .content h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .content p {
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+      color: #dddddd;
+      max-width: 700px;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .links-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #121212 0%, #0d0d0d 100%);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .links-box {
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .links-box h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 16px;
+    }
+
+    .links-box p {
+      color: #cfcfcf;
+      margin-bottom: 32px;
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      width: 100%;
+      max-width: 420px;
+      text-decoration: none;
+      color: #111;
+      background: #f5f5f5;
+      padding: 18px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-2px);
+      background: #dcdcdc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px 40px;
+      color: #8d8d8d;
+      font-size: 0.95rem;
+      background: #0d0d0d;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; max-width: 700px; margin: 40px auto; line-height: 1.6;">
+<body>
 
-<h1>The Attention Trap</h1>
-<p><i>How phones slowly take control of our time, focus, and behavior</i></p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Attention Trap</h1>
+      <p>How phones slowly take control of our time, focus, and behavior.</p>
+      <div class="scroll-note">Scroll to continue</div>
+    </div>
+  </section>
 
-<hr>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Beginning</div>
+      <h2>It started simple.</h2>
+      <p>Phones were originally tools — built to help us communicate, learn, and stay connected. They made life easier, faster, and more efficient.</p>
+    </div>
+  </section>
 
-<p>It started simple.</p>
-<p>Phones were tools — built to help us communicate, learn, and stay connected.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Habit</div>
+      <h2>Then it became routine.</h2>
+      <p>Checking notifications. Opening apps. Scrolling without thinking. What began as convenience slowly became part of everyday behavior.</p>
+    </div>
+  </section>
 
-<p>Then it became routine.</p>
-<p>Checking notifications. Opening apps. Scrolling without thinking.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Automatic Behavior</div>
+      <h2>Now it feels automatic.</h2>
+      <p>Many people do not always choose to pick up their phones. They simply do it. The habit becomes so normal that it starts happening without real intention.</p>
+    </div>
+  </section>
 
-<p>Now it’s automatic.</p>
-<p>We don’t always choose to pick up our phones — we just do it.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Design</div>
+      <h2>Apps are built to keep us there.</h2>
+      <p>Infinite scrolling, streaks, autoplay, likes, and notifications are not random. They are <span class="highlight">designed to hold attention</span> and keep users engaged for as long as possible.</p>
+    </div>
+  </section>
 
-<p>Apps are designed this way.</p>
-<p>Endless scrolling. Notifications. Streaks.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Impact</div>
+      <h2>Over time, it changes us.</h2>
+      <p>Phone dependency can affect attention span, focus, sleep, productivity, and even relationships. Constant access can turn into constant distraction.</p>
+    </div>
+  </section>
 
-<p>Everything is built to keep your attention.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Bigger Picture</div>
+      <h2>This is not just an individual problem.</h2>
+      <p>Phone dependency is shaping how people learn, work, communicate, and spend free time. The issue reaches beyond one person and affects society as a whole.</p>
+    </div>
+  </section>
 
-<p>Over time, it changes us.</p>
-<p>Shorter attention spans. Less focus. Poor sleep. Constant distraction.</p>
+  <section class="section">
+    <div class="content">
+      <div class="eyebrow">Moving Forward</div>
+      <h2>But it does not have to stay this way.</h2>
+      <p>Awareness is the first step. Once people notice the patterns behind their phone use, they can begin setting healthier boundaries and taking back control.</p>
+    </div>
+  </section>
 
-<p>And it’s not just individuals.</p>
-<p>Phone dependency is shaping how we learn, work, and interact as a society.</p>
+  <section class="links-section">
+    <div class="links-box">
+      <h2>Learn More</h2>
+      <p>Explore the deeper pages to understand why phone dependency happens and what people can do about it.</p>
 
-<p>But it doesn’t have to stay this way.</p>
-<p>Awareness is the first step.</p>
+      <div class="nav-links">
+        <a href="why-phones-are-addictive.html">Why Phones Are Addictive</a>
+        <a href="take-back-control.html">How to Take Back Control</a>
+      </div>
+    </div>
+  </section>
 
-<hr>
-
-<h3>Learn more:</h3>
-<ul>
-  <li><a href="why-phones-are-addictive.html">Why Phones Are Addictive</a></li>
-  <li><a href="take-back-control.html">How to Take Back Control</a></li>
-</ul>
+  <footer>
+    Midterm expansion project using scrollytelling and spec-driven development.
+  </footer>
 
 </body>
 </html>
