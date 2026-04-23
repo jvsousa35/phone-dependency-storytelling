@@ -1,4 +1,7 @@
 # The Attention Trap: How Phones Capture Our Minds
+Live Site: https://jvsousa35.github.io/phone-dependency-storytelling/
+
+This project expands on my midterm website about phone dependency by applying scrollytelling and spec-driven development. The homepage tells a story through scrolling, while the linked pages explain the psychology behind phone addiction and ways to take back control.
 
 ## Project Overview
 This project is a digital museum exhibition about phone dependency. The museum explores how smartphones became central to everyday life, how persuasive design encourages repeated checking behavior, and how dependency affects attention, mood, productivity, and identity.
